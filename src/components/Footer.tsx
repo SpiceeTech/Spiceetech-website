@@ -1,4 +1,4 @@
-import { IconMark } from './Logo'
+import { Logo } from './Logo'
 
 const links = [
   { href: '#about', label: 'About' },
@@ -12,11 +12,8 @@ export function Footer() {
     <footer className="border-t border-white/10 py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 text-center sm:flex-row sm:justify-between sm:text-left">
         <div className="flex flex-col items-center gap-2 sm:items-start">
-          <a href="#top" className="inline-flex items-center gap-2">
-            <IconMark className="h-6 w-auto" />
-            <span className="font-display text-sm font-semibold text-white">
-              Spiceetech
-            </span>
+          <a href="#top">
+            <Logo size="sm" />
           </a>
           <p className="text-xs text-white/40">Ideas Without Boundaries.</p>
         </div>
