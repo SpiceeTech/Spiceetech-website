@@ -1,8 +1,30 @@
 import { motion } from 'framer-motion'
 import { Mail, Send } from 'lucide-react'
 import { type FormEvent, useState } from 'react'
+import { LinkedInIcon, WhatsAppIcon } from './icons'
 
 const CONTACT_EMAIL = 'admin@spiceetech.co.za'
+const PHONE_DISPLAY = '+27 67 121 1032'
+const WHATSAPP_URL = 'https://wa.me/27671211032'
+const LINKEDIN_URL = 'https://www.linkedin.com/company/spiceetech'
+
+const contactMethods = [
+  {
+    icon: Mail,
+    label: CONTACT_EMAIL,
+    href: `mailto:${CONTACT_EMAIL}`,
+  },
+  {
+    icon: WhatsAppIcon,
+    label: PHONE_DISPLAY,
+    href: WHATSAPP_URL,
+  },
+  {
+    icon: LinkedInIcon,
+    label: 'LinkedIn',
+    href: LINKEDIN_URL,
+  },
+]
 
 export function Contact() {
   const [name, setName] = useState('')
@@ -100,13 +122,20 @@ export function Contact() {
             <Send size={16} />
           </button>
 
-          <p className="flex items-center gap-2 pt-2 text-sm text-white/40">
-            <Mail size={14} />
-            Or email us directly at{' '}
-            <a href={`mailto:${CONTACT_EMAIL}`} className="text-sky hover:underline">
-              {CONTACT_EMAIL}
-            </a>
-          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3 border-t border-white/10 pt-6 sm:justify-start">
+            {contactMethods.map((method) => (
+              <a
+                key={method.label}
+                href={method.href}
+                target={method.href.startsWith('http') ? '_blank' : undefined}
+                rel={method.href.startsWith('http') ? 'noreferrer' : undefined}
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/70 transition-colors hover:border-sky/40 hover:text-white"
+              >
+                <method.icon size={16} className="text-sky" />
+                {method.label}
+              </a>
+            ))}
+          </div>
         </motion.form>
       </div>
     </section>
