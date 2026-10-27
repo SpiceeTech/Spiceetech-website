@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import { Album, Images, Lock, Users } from 'lucide-react'
+import pauseIcon from '../assets/apps/pause-icon.png'
+import { PlayStoreButton } from './PlayStoreButton'
 
 const features = [
   {
@@ -85,12 +87,15 @@ export function FeaturedApp() {
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-sky/30 bg-sky/10 px-4 py-1.5 text-xs font-semibold text-sky">
             <span className="h-1.5 w-1.5 rounded-full bg-sky animate-pulse" />
-            In closed testing on Google Play
+            Now available worldwide on Google Play
           </span>
 
-          <h2 className="font-display mt-5 text-3xl font-bold text-white sm:text-4xl">
-            Pause — Shared Gallery App
-          </h2>
+          <div className="mt-5 flex items-center gap-4">
+            <img src={pauseIcon} alt="" className="h-14 w-14 rounded-2xl" />
+            <h2 className="font-display text-3xl font-bold text-white sm:text-4xl">
+              Pause — Shared Gallery App
+            </h2>
+          </div>
           <p className="mt-4 text-white/60">
             A private, shared photo gallery for the people who matter most. Create a
             vault, invite your people, and post your memories together — all in one
@@ -112,15 +117,8 @@ export function FeaturedApp() {
           </dl>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 rounded-full bg-sky px-6 py-3 text-sm font-semibold text-navy transition-transform hover:scale-105"
-            >
-              Request early access
-            </a>
-            <span className="text-xs text-white/40">
-              Public release coming soon to Google Play &amp; the App Store.
-            </span>
+            <PlayStoreButton packageName="com.spiceetech.pause" appName="Pause" />
+            <span className="text-xs text-white/40">Android · available worldwide</span>
           </div>
         </motion.div>
 

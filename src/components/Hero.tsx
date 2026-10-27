@@ -60,7 +60,7 @@ export function Hero() {
             href="#pause"
             className="group inline-flex items-center gap-2 rounded-full bg-sky px-6 py-3 text-sm font-semibold text-navy transition-transform hover:scale-105"
           >
-            Meet Pause
+            See our apps
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
           </a>
           <a

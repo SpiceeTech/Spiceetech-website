@@ -52,10 +52,10 @@ export function Contact() {
             Get in touch
           </span>
           <h2 className="font-display mt-3 text-3xl font-bold text-white sm:text-4xl">
-            Want early access, or just want to say hi?
+            Have feedback, or just want to say hi?
           </h2>
           <p className="mt-4 text-white/60">
-            Whether it's about Pause, a project idea, or a partnership — we'd love to
+            Whether it's about Pause, Duebird, a project idea, or a partnership — we'd love to
             hear from you.
           </p>
         </motion.div>

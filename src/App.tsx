@@ -1,5 +1,6 @@
 import { About } from './components/About'
 import { Contact } from './components/Contact'
+import { DuebirdApp } from './components/DuebirdApp'
 import { FeaturedApp } from './components/FeaturedApp'
 import { Footer } from './components/Footer'
 import { Hero } from './components/Hero'
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <About />
         <FeaturedApp />
+        <DuebirdApp />
         <Services />
         <Contact />
       </main>
