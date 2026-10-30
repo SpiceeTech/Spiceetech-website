@@ -12,7 +12,7 @@ const values = [
     icon: Gauge,
     title: 'Lean & fast',
     description:
-      'A small studio means fewer layers and faster iteration — features ship when they are ready, not when a roadmap says so.',
+      'A small studio means fewer layers and faster iteration. Features ship when they are ready, not when a roadmap says so.',
   },
   {
     icon: Smartphone,
@@ -24,7 +24,7 @@ const values = [
     icon: MessageCircle,
     title: 'Direct line to the makers',
     description:
-      "No support tickets vanishing into a queue — when you reach out, you're talking to the people who built it.",
+      "No support tickets vanishing into a queue. When you reach out, you're talking to the people who built it.",
   },
 ]
 

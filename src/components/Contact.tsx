@@ -34,7 +34,7 @@ export function Contact() {
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
     const subject = encodeURIComponent(`Hello from ${name || 'the Spiceetech site'}`)
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`)
+    const body = encodeURIComponent(`${message}\n\nFrom ${name} (${email})`)
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`
   }
 
@@ -55,7 +55,7 @@ export function Contact() {
             Have feedback, or just want to say hi?
           </h2>
           <p className="mt-4 text-white/60">
-            Whether it's about Pause, Duebird, a project idea, or a partnership — we'd love to
+            Whether it's about Pause, Duebird, a project idea, or a partnership, we'd love to
             hear from you.
           </p>
         </motion.div>

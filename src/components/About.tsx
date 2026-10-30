@@ -6,7 +6,7 @@ const pillars = [
     icon: Smartphone,
     title: 'Mobile Apps',
     description:
-      'Focused, well-crafted apps that solve one problem well — built for iOS and Android from a single codebase.',
+      'Focused, well-crafted apps that solve one problem well, built for iOS and Android from a single codebase.',
   },
   {
     icon: Wrench,
@@ -18,7 +18,7 @@ const pillars = [
     icon: Layers,
     title: 'SaaS',
     description:
-      'Subscription products built for the long run — reliable, privacy-respecting, and built to grow with our users.',
+      'Subscription products built for the long run: reliable, privacy-respecting, and built to grow with our users.',
   },
 ]
 
@@ -40,8 +40,8 @@ export function About() {
             One small studio, three kinds of products
           </h2>
           <p className="mt-4 text-white/60">
-            We're an independent team building things we'd want to use ourselves —
-            no bloat, no dark patterns, just useful software.
+            We're an independent team building things we'd want to use ourselves.
+            No bloat, no dark patterns, just useful software.
           </p>
         </motion.div>
 

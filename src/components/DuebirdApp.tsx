@@ -101,7 +101,7 @@ export function DuebirdApp() {
           <div className="mt-5 flex items-center gap-4">
             <img src={duebirdIcon} alt="" className="h-14 w-14 rounded-2xl" />
             <h2 className="font-display text-3xl font-bold text-white sm:text-4xl">
-              Duebird — Bills Tracker
+              Duebird: Bills Tracker
             </h2>
           </div>
           <p className="mt-4 text-white/60">
